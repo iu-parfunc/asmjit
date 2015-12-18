@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 2.6)
 
 # =============================================================================
 # [AsmJit - Configuration]
@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 3.1)
 # set(ASMJIT_EMBED FALSE)
 
 # Whether to build a static library (default FALSE).
-# set(ASMJIT_STATIC FALSE)
+set(ASMJIT_STATIC TRUE)
 
 # Whether to build tests and samples (default FALSE).
 # set(ASMJIT_BUILD_TEST FALSE)
@@ -60,7 +60,7 @@ set(ASMJIT_LIBS)                                # Asmjit dependencies with asmji
 
 # Internal, never use.
 set(ASMJIT_D "-D")                              # Used to define a C/C++ preprocessor parameter (-D or /D).
-set(ASMJIT_PRIVATE_CFLAGS)                      # Compiler flags independent of build type.
+set(ASMJIT_PRIVATE_CFLAGS "-fPIC")              # Compiler flags independent of build type.
 set(ASMJIT_PRIVATE_LFLAGS "")                   # Linker flags used by the library and tests.
 
 set(ASMJIT_PRIVATE_CFLAGS_DBG)                  # Compiler flags used only by debug build.
