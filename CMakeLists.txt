@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 2.6)
 # set(ASMJIT_EMBED FALSE)
 
 # Whether to build a static library (default FALSE).
-set(ASMJIT_STATIC TRUE)
+# set(ASMJIT_STATIC TRUE)
 
 # Whether to build tests and samples (default FALSE).
 # set(ASMJIT_BUILD_TEST FALSE)
